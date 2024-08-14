@@ -6,14 +6,19 @@
 }
 
 body {
+  min-height: 100vh;
   background: #222;
+  background-image: url("images/nature.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .card {
   width: 90%;
   max-width: 470px;
-  background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
+  background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
   margin: 100px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
@@ -94,4 +99,8 @@ body {
 .humidity .wind {
   font-size: 28px;
   margin-top: -6px;
+}
+
+.weather {
+    display: none;
 }
