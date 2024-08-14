@@ -17,19 +17,17 @@ async function checkWeather(city) {
     const weatherCondition = data.weather[0].main.toLowerCase();
 
     // Set the weather icon based on the weather condition using if-else
-    if (data.weather[0].main.toLowerCase() === "clear") {
+    if (data.weather[0].main === "Clear") {
         weatherIcon.src = "images/clear.png";
-    } else if (data.weather[0].main.toLowerCase() === "clouds") {
+    } else if (data.weather[0].main === "Clouds") {
         weatherIcon.src = "images/clouds.png";
-    } else if (data.weather[0].main.toLowerCase() === "rain") {
+    } else if (data.weather[0].main === "Rain") {
         weatherIcon.src = "images/rain.png";
-    } else if (data.weather[0].main.toLowerCase() === "drizzle") {
+    } else if (data.weather[0].main === "Drizzle") {
         weatherIcon.src = "images/drizzle.png";
-    } else if (data.weather[0].main.toLowerCase() === "snow") {
+    } else if (data.weather[0].main === "Snow") {
         weatherIcon.src = "images/snow.png";
-    } else if (data.weather[0].main.toLowerCase() === "wind") {
-        weatherIcon.src = "images/wind.png";
-    } else if (data.weather[0].main.toLowerCase() === "mist") {
+    } else if (data.weather[0].main === "Mist") {
         weatherIcon.src = "images/mist.png";
     }
 
